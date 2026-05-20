@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Typowa witryna internetowa </title>
+    <style type="text/css">
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu {
+            display: flex;
+            background-color: #333;
+            list-style-type: none;
+            justify-content: center;
+        }
+
+        .menu-item, .submenu-item {
+            position: relative;
+            transition: 3s;
+        }
+
+        .menu-item:hover {
+            background-color: rgb(37,37,37);
+        }
+
+        .menu-link, .submenu-link {
+            display: block;
+            color: white;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: rgb(252,0,0);
+            list-style-type: none;
+        }
+
+        .submenu-item {
+            width: 100%;
+        }
+
+        .submenu-link {
+            background-color: blue;
+            transition: 3s;
+        }
+
+        .submenu-link:hover {
+            background-color: #333;
+        }
+
+        .menu-item:hover .submenu {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+
+    </style>
+    </head >
+    <body >
+           
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#" class="menu-link">Menu 1</a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#" class="submenu-link">Pozycja 1.1</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">Pozycja 1.2</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">Pozycja 1.3</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">Pozycja 1.4</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Menu 2</a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#" class="submenu-link">Pozycja 2.1</a></li>
+                    <li class="submenu-item"><a href="#" class="submenu-link">Pozycja 2.2</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </body >
+    </html >
