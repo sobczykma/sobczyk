@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>animacje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+
+        button:hover + .niewiem_choc_sie_domyslam  {
+            animation-name: jeju_ruszam_sie;
+        }
+
+        .niewiem_choc_sie_domyslam {
+            width: 80px;
+            height: 80px;
+            background: aqua;
+            border: 2px solid black;
+            margin-top: 50px;
+            animation-duration: 2s;
+            animation-timing-function: ease=in;
+        }
+
+        @keyframes jeju_ruszam_sie {
+            from, to {
+                transform: rotate(0) scale(1, 1);
+                border-radius: 0;
+                background: aqua;
+            }
+
+            50% {
+                transform: rotate(1turn) scale(2, 2);
+                border-radius: 50%;
+                background: tomato;
+            }
+        }
+
+
+</style>        
+</head >
+<body >
+    <center>
+        <button>Najedź na mnie</button>
+        <div class="niewiem_choc_sie_domyslam"></div>
+
+</body >
+</html >

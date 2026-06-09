@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>animacje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+
+        .niewiem_choc_sie_domyslam {
+            width: 80px;
+            height: 80px;
+            background-color: aqua;
+            border: 2px solid black;
+            margin-top: 20px;
+            border-radius: 50%;
+            animation-duration: 2s, 5s;
+            animation-delay: 3s, 0s;
+            animation-iteration-count: 5, infinite;
+            animation-direction: reverse, alternate;
+            animation-name: jeju_ruszam_sie, first_animation;
+            animation-timing-function: steps(10, start), linear;
+        }
+
+        @keyframes jeju_ruszam_sie {
+            from {
+                transform: translate(0px);
+            }
+
+            to {
+                transform: translate(350px);
+            }
+        }
+
+        @keyframes first_animation {
+            from {
+                background: blue;
+            }
+
+            15% {
+                background: #323641;
+            }
+
+            50% {
+                background: yellow;
+            }
+
+            to {
+                background: red;
+            }
+        }
+    </style>
+</head>
+ <body >
+     <div class="niewiem_choc_sie_domyslam"></div>
+
+        </body >
+        </html >

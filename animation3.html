@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>animacje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        .jeden, .dwa, .trzy, .cztery, .piec{
+            width: 40px;
+            height: 40px;
+            background: #323741;
+            position: absolute;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            color: white;
+            animation-name: jeju_ruszam_sie;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+
+        .jeden{
+            top: 10px;
+            left: 10px;
+            transform-origin: left center;
+            z-index: 2;
+            background: #323641;
+
+        }
+        
+        .dwa{
+            top: 50px;
+            left: 50px;
+            animation-name: jeju_ruszam_sie3;
+
+        }
+
+        .trzy{ 
+            top: 10px;
+            left: 90px;
+            z-index: 1;
+            transform-origin: center top;
+            animation-name: jeju_ruszam_sie2;
+            background: #ffa836;
+
+        }
+
+        .cztery{
+            top: 90px;
+            left: 90px;
+            z-index: -1;
+            transform-origin: right center;
+            background: #323641;
+
+        }
+
+        .piec{ 
+            top: 90px;
+            left: 10px;
+            z-index: -2;
+            transform-origin: center bottom;
+            animation-name: jeju_ruszam_sie2;
+            background: #ffa836;
+
+        }
+
+        @keyframes jeju_ruszam_sie{
+            from,to{transform: scale3d(1,1,1)}
+            50%{transform: scale3d(3,1,1)}
+            
+        }
+
+        @keyframes jeju-ruszam_sie2{
+            from,to{transform: scale3d(1,1,1)}
+            50%{transform: scale3d(1,3,1)}
+
+        }
+
+        @keyframes jeju_ruszam_sie3{
+            from,to{border-radius: 0%;transform: scale3d(1,1,1)}
+            50%{border-radius: 50%;transform: scale3d(0,0,1)}
+
+        }
+    </style>
+</head >
+<body>
+    <div class="jeden">I</div>
+    <div class="dwa">II</div>
+    <div class="trzy">III</div>
+    <div class="cztery">IV</div>
+    <div class="piec">V</div>
+</body>
+</html >
