@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        html{
+            width: 100%;
+            height: 100%;          
+        }
+
+        div{
+            height: 10rem;
+            width: 10rem;
+            background: #4df6;
+            border: .125rem solid #4df;
+            position: absolute;
+            top: .5rem;
+            left: .5rem;
+            animation: z 5s ease-in-out infinite;
+            box-sizing: border-box;
+        }
+
+        @keyframes z {
+            from, to{top: .5rem; left: .5rem;}
+            25% {top:  .5rem; left: calc(100% - 10,5rem)}
+            50% {top: calc(100% - 10,5rem); left: 5rem;}
+            75% {top: calc(100% - 10,5rem); left: calc(100% - 10,5rem)}
+        }
+
+        @keyframes obrot{
+            from{transform: rotate(0turn)}
+            to{transform: rotate(1turn)}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+
+</body>
+</html>
